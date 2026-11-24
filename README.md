@@ -4,6 +4,8 @@ Case independente sobre a avaliação pública da Saúde da Família em Ibirité
 
 **[Abrir o painel público](https://t-riego.github.io/vigia-aps/)**
 
+**[Baixar a versão Power BI Desktop](https://t-riego.github.io/vigia-aps/vigia-aps-powerbi.zip)**
+
 O painel contém exclusivamente dados agregados. A avaliação do SIAPS cobre os sete indicadores eSF nos quadrimestres disponíveis no export de 23 de novembro de 2026. O aviso de dados preliminares acompanha os números. A base inclui também os atendimentos registrados da competência de dezembro de 2025 e a estimativa de população do IBGE de 2026.
 
 Em cada indicador, a participação de Bom ou Ótimo é a soma desses dois conceitos dividida pelo total dos quatro. A variação usa o quadrimestre anterior disponível. Os totais de equipes por indicador têm denominador próprio.

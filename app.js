@@ -128,7 +128,7 @@ function loadDashboard(data) {
       $('comparison').querySelector('[aria-pressed="true"]').focus();
     }));
     const outcome = share === null ? 'Sem equipes classificadas no recorte.' :
-      `No ${periodLabel(period)}, ${goodOf(selected)} de ${totalOf(selected)} equipes ficaram em Bom ou Ótimo para ${label.toLocaleLowerCase('pt-BR')}.`;
+      `No ${periodLabel(period)}, ${goodOf(selected)} de ${totalOf(selected)} equipes ficaram em Bom ou Ótimo no indicador ${indicator} · ${label}.`;
     $('finding').textContent = difference === null ? outcome :
       `${outcome} Na avaliação anterior, eram ${goodOf(previous)} de ${totalOf(previous)}.`;
     if (updateUrl) {
