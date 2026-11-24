@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore a avaliação da Atenção Primária em Ibirité com dados públicos do SIAPS e do IBGE. Um case de análise e visualização em Power BI.">
+  <meta name="theme-color" content="#10342e">
+  <title>VIGIA APS · Atenção Primária em Ibirité</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#painel">Ir para os dados</a>
+  <header class="topbar">
+    <div class="wrap topbar-row">
+      <a href="./" class="brand"><span class="symbol" aria-hidden="true">V</span> VIGIA APS</a>
+      <nav aria-label="Páginas do case"><a href="#painel">Painel</a><a href="#fontes">Fontes e método</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="heading">
+      <div>
+        <p class="location">IBIRITÉ, MINAS GERAIS <span aria-hidden="true">/</span> DADOS PÚBLICOS</p>
+        <h1 id="heading">Atenção Primária em Ibirité</h1>
+        <p class="dek">Compare como as equipes de Saúde da Família foram classificadas nos indicadores de qualidade do SIAPS.</p>
+      </div>
+      <dl class="coverage">
+        <dt>Avaliação mais recente da base</dt>
+        <dd id="latest">Carregando…</dd>
+        <dt>Escopo</dt>
+        <dd>Equipes de Saúde da Família</dd>
+      </dl>
+    </section>
+
+    <section id="painel" aria-label="Painel de qualidade da APS">
+      <form class="filters" aria-label="Filtros do painel">
+        <label for="period">Quadrimestre <select id="period" disabled></select></label>
+        <label for="indicator">Indicador <select id="indicator" disabled></select></label>
+        <button id="reset" type="button" disabled>Limpar filtros</button>
+      </form>
+      <p id="load-status" class="status" role="status">Carregando a base pública…</p>
+      <div id="report" hidden>
+        <div class="scope">
+          <h2 id="selection"></h2>
+          <span id="preliminary" class="signal" hidden>Dados preliminares no SIAPS</span>
+        </div>
+        <div class="kpis" aria-label="Indicadores do recorte" aria-live="polite">
+          <article><h3>Equipes avaliadas</h3><strong id="kpi-total"></strong><p id="kpi-total-note"></p></article>
+          <article class="hero-kpi"><h3>Bom ou Ótimo</h3><strong id="kpi-share"></strong><p id="kpi-share-note"></p></article>
+          <article><h3>Variação no período</h3><strong id="kpi-delta"></strong><p id="kpi-delta-note"></p></article>
+        </div>
+        <div class="charts">
+          <section class="panel" aria-labelledby="trend-heading">
+            <h2 id="trend-heading">Evolução por conceito</h2>
+            <p id="trend-note" class="chart-note"></p>
+            <div class="legend" id="legend" aria-hidden="true"></div>
+            <div id="trend"></div>
+            <details id="data-table"><summary>Consultar valores em tabela</summary><div id="table"></div></details>
+          </section>
+          <section class="panel" aria-labelledby="comparison-heading">
+            <h2 id="comparison-heading">Bom ou Ótimo por indicador</h2>
+            <p class="chart-note">Selecione uma linha para analisar o indicador.</p>
+            <div id="comparison" aria-label="Selecionar indicador pela comparação"></div>
+          </section>
+        </div>
+        <p id="finding" class="finding" aria-live="polite"></p>
+        <section class="context" aria-labelledby="context-heading">
+          <div><h2 id="context-heading">Contexto municipal</h2><p>Competências próprias para cada fonte.</p></div>
+          <article><h3>Atendimentos registrados</h3><strong id="ctx-attendance"></strong><p id="ctx-attendance-note"></p></article>
+          <article><h3>População estimada</h3><strong id="ctx-population"></strong><p id="ctx-population-note"></p></article>
+        </section>
+      </div>
+    </section>
+
+    <section id="fontes" class="sources panel" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Fontes e método</h2>
+      <p>O SIAPS divulga a contagem de equipes por conceito em cada indicador. O percentual <strong>Bom ou Ótimo</strong> divide a soma dessas duas categorias pelo total das quatro. A variação em pontos percentuais usa o quadrimestre anterior disponível no arquivo.</p>
+      <p id="provenance"></p>
+      <ul class="source-links">
+        <li><a href="https://siaps.saude.gov.br/publico/painel-avaliacao-quadrimestre">Avaliação pública do SIAPS</a></li>
+        <li><a href="https://sisaps.saude.gov.br/sistemas/siaps/docs/manual/cofinanciamento/">Manual da avaliação</a></li>
+        <li><a href="https://www.ibge.gov.br/cidades-e-estados/mg/ibirite.html">IBGE · Ibirité</a></li>
+        <li><a href="./data.json" download="vigia-aps-ibirite.json">Baixar base agregada</a></li>
+        <li id="powerbi-link" hidden><a href="./vigia-aps-powerbi.zip" download>Baixar o projeto Power BI</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="wrap footer">VIGIA APS <span>Case independente de análise de dados públicos</span></footer>
+</body>
+</html>

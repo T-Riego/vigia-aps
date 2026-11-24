@@ -1,0 +1,267 @@
+{
+  "municipality": "Ibirité",
+  "state": "MG",
+  "teamType": "eSF",
+  "extracted": "23 de novembro de 2026 - 20:56h",
+  "preliminary": true,
+  "snapshotSha256": "8127f23a21b0ee69579faa4008409c44a1350504089bfc750026c20a9dcd65cd",
+  "indicators": [
+    {
+      "id": "C1",
+      "label": "Mais acesso à APS",
+      "officialLabel": "Mais Acesso à Atenção Primária à Saúde"
+    },
+    {
+      "id": "C2",
+      "label": "Desenvolvimento infantil",
+      "officialLabel": "Cuidado no Desenvolvimento Infantil"
+    },
+    {
+      "id": "C3",
+      "label": "Gestação e puerpério",
+      "officialLabel": "Cuidado da Gestante e da Puérpera"
+    },
+    {
+      "id": "C4",
+      "label": "Diabetes",
+      "officialLabel": "Cuidado da Pessoa com Diabetes Mellitus"
+    },
+    {
+      "id": "C5",
+      "label": "Hipertensão",
+      "officialLabel": "Cuidado da Pessoa com Hipertensão"
+    },
+    {
+      "id": "C6",
+      "label": "Pessoa idosa",
+      "officialLabel": "Cuidado da Pessoa Idosa"
+    },
+    {
+      "id": "C7",
+      "label": "Saúde integral da mulher",
+      "officialLabel": "Cuidado Integral à Saúde da Mulher"
+    }
+  ],
+  "quality": [
+    {
+      "period": "2025Q1",
+      "indicator": "C1",
+      "counts": [
+        9,
+        30,
+        9,
+        2
+      ]
+    },
+    {
+      "period": "2025Q1",
+      "indicator": "C2",
+      "counts": [
+        15,
+        31,
+        4,
+        0
+      ]
+    },
+    {
+      "period": "2025Q1",
+      "indicator": "C3",
+      "counts": [
+        7,
+        35,
+        8,
+        0
+      ]
+    },
+    {
+      "period": "2025Q1",
+      "indicator": "C4",
+      "counts": [
+        3,
+        33,
+        14,
+        0
+      ]
+    },
+    {
+      "period": "2025Q1",
+      "indicator": "C5",
+      "counts": [
+        2,
+        20,
+        28,
+        0
+      ]
+    },
+    {
+      "period": "2025Q1",
+      "indicator": "C6",
+      "counts": [
+        0,
+        47,
+        3,
+        0
+      ]
+    },
+    {
+      "period": "2025Q1",
+      "indicator": "C7",
+      "counts": [
+        1,
+        49,
+        0,
+        0
+      ]
+    },
+    {
+      "period": "2026Q1",
+      "indicator": "C1",
+      "counts": [
+        5,
+        28,
+        13,
+        4
+      ]
+    },
+    {
+      "period": "2026Q1",
+      "indicator": "C2",
+      "counts": [
+        20,
+        28,
+        2,
+        0
+      ]
+    },
+    {
+      "period": "2026Q1",
+      "indicator": "C3",
+      "counts": [
+        8,
+        31,
+        10,
+        1
+      ]
+    },
+    {
+      "period": "2026Q1",
+      "indicator": "C4",
+      "counts": [
+        1,
+        25,
+        24,
+        0
+      ]
+    },
+    {
+      "period": "2026Q1",
+      "indicator": "C5",
+      "counts": [
+        0,
+        14,
+        34,
+        2
+      ]
+    },
+    {
+      "period": "2026Q1",
+      "indicator": "C6",
+      "counts": [
+        0,
+        9,
+        41,
+        0
+      ]
+    },
+    {
+      "period": "2026Q1",
+      "indicator": "C7",
+      "counts": [
+        0,
+        50,
+        0,
+        0
+      ]
+    },
+    {
+      "period": "2026Q2",
+      "indicator": "C1",
+      "counts": [
+        4,
+        25,
+        17,
+        4
+      ]
+    },
+    {
+      "period": "2026Q2",
+      "indicator": "C2",
+      "counts": [
+        18,
+        31,
+        1,
+        0
+      ]
+    },
+    {
+      "period": "2026Q2",
+      "indicator": "C3",
+      "counts": [
+        2,
+        36,
+        11,
+        1
+      ]
+    },
+    {
+      "period": "2026Q2",
+      "indicator": "C4",
+      "counts": [
+        0,
+        19,
+        31,
+        0
+      ]
+    },
+    {
+      "period": "2026Q2",
+      "indicator": "C5",
+      "counts": [
+        0,
+        10,
+        33,
+        7
+      ]
+    },
+    {
+      "period": "2026Q2",
+      "indicator": "C6",
+      "counts": [
+        0,
+        5,
+        45,
+        0
+      ]
+    },
+    {
+      "period": "2026Q2",
+      "indicator": "C7",
+      "counts": [
+        0,
+        50,
+        0,
+        0
+      ]
+    }
+  ],
+  "context": {
+    "attendance": {
+      "value": 14549,
+      "period": "202512"
+    },
+    "population": {
+      "value": 180404,
+      "period": "2026"
+    }
+  }
+}
